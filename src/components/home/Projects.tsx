@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FadeIn } from "../ui/FadeIn";
 
 const projects = [
     {
@@ -94,36 +95,40 @@ export function Projects() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {projects.map((project, index) => (
-                    <div
+                    <FadeIn
                         key={index}
-                        className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-200 flex flex-col"
+                        delay={0.2 * (index % 3)} // Stagger based on column position
+                        direction="up"
+                        className="h-full"
                     >
-                        <div className="relative h-64 overflow-hidden">
-                            <Image
-                                src={project.image}
-                                alt={project.title}
-                                fill
-                                className="object-cover transition-transform duration-700 group-hover:scale-110"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
-                            <div className="absolute bottom-4 left-4 right-4">
-                                <span className="inline-block px-3 py-1 bg-primary/90 text-white text-xs font-bold uppercase tracking-wider rounded-full mb-2">
-                                    {project.location}
-                                </span>
+                        <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-200 flex flex-col h-full">
+                            <div className="relative h-64 overflow-hidden">
+                                <Image
+                                    src={project.image}
+                                    alt={project.title}
+                                    fill
+                                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
+                                <div className="absolute bottom-4 left-4 right-4">
+                                    <span className="inline-block px-3 py-1 bg-primary/90 text-white text-xs font-bold uppercase tracking-wider rounded-full mb-2">
+                                        {project.location}
+                                    </span>
+                                </div>
+                            </div>
+                            <div className="p-8 flex flex-col flex-grow">
+                                <h4 className="text-xl font-bold mb-2 text-slate-900 group-hover:text-primary transition-colors">
+                                    {project.title}
+                                </h4>
+                                <p className="text-sm font-medium text-primary mb-4">
+                                    {project.type}
+                                </p>
+                                <p className="text-slate-600 text-sm leading-relaxed flex-grow">
+                                    {project.description}
+                                </p>
                             </div>
                         </div>
-                        <div className="p-8 flex flex-col flex-grow">
-                            <h4 className="text-xl font-bold mb-2 text-slate-900 group-hover:text-primary transition-colors">
-                                {project.title}
-                            </h4>
-                            <p className="text-sm font-medium text-primary mb-4">
-                                {project.type}
-                            </p>
-                            <p className="text-slate-600 text-sm leading-relaxed flex-grow">
-                                {project.description}
-                            </p>
-                        </div>
-                    </div>
+                    </FadeIn>
                 ))}
             </div>
         </section>

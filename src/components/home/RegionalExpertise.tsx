@@ -1,3 +1,5 @@
+import { FadeIn } from "../ui/FadeIn";
+
 export function RegionalExpertise() {
     return (
         <section className="py-20 px-4 max-w-7xl mx-auto overflow-hidden">
@@ -12,24 +14,30 @@ export function RegionalExpertise() {
                         African continent.
                     </p>
                     <ul className="space-y-4 text-slate-900">
-                        <li className="flex items-start gap-4 group">
-                            <div className="size-2 mt-2.5 rounded-full bg-primary group-hover:scale-150 transition-transform shrink-0"></div>
-                            <span className="text-lg font-medium">
-                                Southern African Development Community (SADC)
-                            </span>
-                        </li>
-                        <li className="flex items-start gap-4 group">
-                            <div className="size-2 mt-2.5 rounded-full bg-primary group-hover:scale-150 transition-transform shrink-0"></div>
-                            <span className="text-lg font-medium">
-                                East African Community (EAC)
-                            </span>
-                        </li>
-                        <li className="flex items-start gap-4 group">
-                            <div className="size-2 mt-2.5 rounded-full bg-primary group-hover:scale-150 transition-transform shrink-0"></div>
-                            <span className="text-lg font-medium">
-                                Economic Community of West African States (ECOWAS)
-                            </span>
-                        </li>
+                        <FadeIn delay={0.2} direction="right">
+                            <li className="flex items-start gap-4 group">
+                                <div className="size-2 mt-2.5 rounded-full bg-primary group-hover:scale-150 transition-transform shrink-0"></div>
+                                <span className="text-lg font-medium">
+                                    Southern African Development Community (SADC)
+                                </span>
+                            </li>
+                        </FadeIn>
+                        <FadeIn delay={0.4} direction="right">
+                            <li className="flex items-start gap-4 group">
+                                <div className="size-2 mt-2.5 rounded-full bg-primary group-hover:scale-150 transition-transform shrink-0"></div>
+                                <span className="text-lg font-medium">
+                                    East African Community (EAC)
+                                </span>
+                            </li>
+                        </FadeIn>
+                        <FadeIn delay={0.6} direction="right">
+                            <li className="flex items-start gap-4 group">
+                                <div className="size-2 mt-2.5 rounded-full bg-primary group-hover:scale-150 transition-transform shrink-0"></div>
+                                <span className="text-lg font-medium">
+                                    Economic Community of West African States (ECOWAS)
+                                </span>
+                            </li>
+                        </FadeIn>
                     </ul>
                 </div>
                 <div className="order-1 lg:order-2 relative">

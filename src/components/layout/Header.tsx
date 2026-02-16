@@ -34,10 +34,10 @@ export function Header() {
     return (
         <>
             <header
-                className={`fixed top-4 left-4 right-4 md:left-8 md:right-8 max-w-7xl mx-auto z-50 transition-all duration-500 transform ${isVisible ? "translate-y-0 opacity-100" : "-translate-y-[150%] opacity-0"
+                className={`fixed top-2 left-2 right-2 md:left-4 md:right-4 max-w-[98%] mx-auto z-50 transition-all duration-500 transform ${isVisible ? "translate-y-0 opacity-100" : "-translate-y-[150%] opacity-0"
                     }`}
             >
-                <div className="bg-white rounded-full shadow-lg shadow-black/5 border border-slate-100 h-20 px-6 flex items-center justify-between">
+                <div className="bg-white rounded-full shadow-lg shadow-black/5 border border-slate-100 h-20 px-8 flex items-center justify-between">
                     <Link href="/" className="flex items-center gap-3 group shrink-0">
                         <div className="relative h-12 w-auto transition-all">
                             <img src="/logo/Maoko Logo Pic.jpg" alt="Maoko Logo" className="h-full w-auto object-contain" />
@@ -45,7 +45,7 @@ export function Header() {
                     </Link>
 
                     {/* Desktop Navigation */}
-                    <nav className="hidden lg:flex items-center gap-2">
+                    <nav className="hidden lg:flex items-center gap-4">
                         {[
                             { label: "Home", href: "/" },
                             { label: "Services", href: "#services" },
@@ -56,7 +56,7 @@ export function Header() {
                             <Link
                                 key={link.label}
                                 href={link.href}
-                                className="text-sm font-semibold text-slate-700 hover:text-primary hover:bg-primary/5 px-5 py-2.5 rounded-full transition-all duration-300"
+                                className="text-base font-semibold text-slate-700 hover:text-primary hover:bg-primary/5 px-6 py-3 rounded-full transition-all duration-300"
                             >
                                 {link.label}
                             </Link>
