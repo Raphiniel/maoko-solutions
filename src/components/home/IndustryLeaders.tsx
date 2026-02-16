@@ -3,7 +3,7 @@ import Link from "next/link";
 export function IndustryLeaders() {
     return (
         <section className="py-16 px-4 max-w-7xl mx-auto">
-            <div className="flex justify-between items-end mb-10">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-4 mb-10">
                 <div>
                     <h3 className="text-2xl font-bold mb-2 text-slate-900">
                         Industry Leaders
@@ -14,10 +14,10 @@ export function IndustryLeaders() {
                 </div>
                 <Link
                     href="#"
-                    className="text-primary font-semibold flex items-center gap-1"
+                    className="text-primary font-semibold flex items-center gap-1 hover:gap-2 transition-all"
                 >
                     Explore All{" "}
-                    <span className="material-symbols-outlined text-sm">open_in_new</span>
+                    <span className="material-symbols-outlined text-sm">arrow_forward</span>
                 </Link>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

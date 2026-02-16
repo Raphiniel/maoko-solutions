@@ -47,22 +47,22 @@ export function Footer() {
                     </h4>
                     <ul className="space-y-4 text-sm text-gray-400">
                         <li>
-                            <Link href="#" className="hover:text-primary transition-colors">
+                            <Link href="/#about" className="hover:text-primary transition-colors">
                                 About Us
                             </Link>
                         </li>
                         <li>
-                            <Link href="#" className="hover:text-primary transition-colors">
+                            <Link href="/#about" className="hover:text-primary transition-colors">
                                 Our History
                             </Link>
                         </li>
                         <li>
-                            <Link href="#" className="hover:text-primary transition-colors">
+                            <Link href="/#about" className="hover:text-primary transition-colors">
                                 Our Values
                             </Link>
                         </li>
                         <li>
-                            <Link href="#" className="hover:text-primary transition-colors">
+                            <Link href="/#services" className="hover:text-primary transition-colors">
                                 Sustainability
                             </Link>
                         </li>
@@ -74,22 +74,22 @@ export function Footer() {
                     </h4>
                     <ul className="space-y-4 text-sm text-gray-400">
                         <li>
-                            <Link href="#" className="hover:text-primary transition-colors">
+                            <Link href="/#services" className="hover:text-primary transition-colors">
                                 Civil Engineering
                             </Link>
                         </li>
                         <li>
-                            <Link href="#" className="hover:text-primary transition-colors">
+                            <Link href="/#operations" className="hover:text-primary transition-colors">
                                 Project Management
                             </Link>
                         </li>
                         <li>
-                            <Link href="#" className="hover:text-primary transition-colors">
+                            <Link href="/#services" className="hover:text-primary transition-colors">
                                 Water Management
                             </Link>
                         </li>
                         <li>
-                            <Link href="#" className="hover:text-primary transition-colors">
+                            <Link href="/#operations" className="hover:text-primary transition-colors">
                                 Strategic Consulting
                             </Link>
                         </li>
@@ -101,23 +101,23 @@ export function Footer() {
                     </h4>
                     <ul className="space-y-4 text-sm text-gray-400">
                         <li>
-                            <Link href="#" className="hover:text-primary transition-colors">
+                            <Link href="/#projects" className="hover:text-primary transition-colors">
                                 Case Studies
                             </Link>
                         </li>
                         <li>
-                            <Link href="#" className="hover:text-primary transition-colors">
+                            <Link href="/#projects" className="hover:text-primary transition-colors">
                                 Latest News
                             </Link>
                         </li>
                         <li>
-                            <Link href="#" className="hover:text-primary transition-colors">
+                            <Link href="/#contact" className="hover:text-primary transition-colors">
                                 Careers
                             </Link>
                         </li>
                         <li>
                             <Link
-                                href="mailto:info@maokosolutions.com"
+                                href="/#contact"
                                 className="hover:text-primary transition-colors"
                             >
                                 Contact
@@ -136,13 +136,13 @@ export function Footer() {
                     </p>
                 </div>
                 <div className="flex gap-8 text-xs text-gray-500">
-                    <Link href="http://www.twitter.com/MaokoSolutions" className="hover:text-white">
+                    <Link href="https://twitter.com/MaokoSolutions" target="_blank" rel="noopener noreferrer" className="hover:text-white">
                         Twitter
                     </Link>
-                    <Link href="http://www.instagram.com/maokosolutions" className="hover:text-white">
+                    <Link href="https://www.instagram.com/maokosolutions" target="_blank" rel="noopener noreferrer" className="hover:text-white">
                         Instagram
                     </Link>
-                    <Link href="https://www.linkedin.com/company/maoko-engineering-solutions/" className="hover:text-white">
+                    <Link href="https://www.linkedin.com/company/maoko-engineering-solutions/" target="_blank" rel="noopener noreferrer" className="hover:text-white">
                         LinkedIn
                     </Link>
                 </div>

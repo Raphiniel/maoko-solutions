@@ -12,22 +12,22 @@ export function RegionalExpertise() {
                         African continent.
                     </p>
                     <ul className="space-y-4 text-slate-900">
-                        <li className="flex items-center gap-4 group">
-                            <div className="size-2 rounded-full bg-primary group-hover:scale-150 transition-transform"></div>
+                        <li className="flex items-start gap-4 group">
+                            <div className="size-2 mt-2.5 rounded-full bg-primary group-hover:scale-150 transition-transform shrink-0"></div>
                             <span className="text-lg font-medium">
                                 Southern African Development Community (SADC)
                             </span>
                         </li>
-                        <li className="flex items-center gap-4 group">
-                            <div className="size-2 rounded-full bg-primary group-hover:scale-150 transition-transform"></div>
+                        <li className="flex items-start gap-4 group">
+                            <div className="size-2 mt-2.5 rounded-full bg-primary group-hover:scale-150 transition-transform shrink-0"></div>
                             <span className="text-lg font-medium">
                                 East African Community (EAC)
                             </span>
                         </li>
-                        <li className="flex items-center gap-4 group">
-                            <div className="size-2 rounded-full bg-primary group-hover:scale-150 transition-transform"></div>
+                        <li className="flex items-start gap-4 group">
+                            <div className="size-2 mt-2.5 rounded-full bg-primary group-hover:scale-150 transition-transform shrink-0"></div>
                             <span className="text-lg font-medium">
-                                West African Economic Zone
+                                Economic Community of West African States (ECOWAS)
                             </span>
                         </li>
                     </ul>
